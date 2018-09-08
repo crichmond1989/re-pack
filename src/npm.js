@@ -1,6 +1,10 @@
 const fs = require("fs-extra");
 const spawn = require("./spawn.js");
 
+const npmAdd = (...args) => {
+    return npmInstall(...args, "--package-lock-only");
+}
+
 const npmInit = async () => {
     const exists = await fs.pathExists("package.json");
 
@@ -18,7 +22,8 @@ const npmInstall = (...args) => {
     return spawn(npmCommand, "install", ...args);
 };
 
-module.exports = async () => {
-    await npmInit();
-    await npmInstall("html-webpack-plugin", "-D");
-}
+module.exports = {
+    add: npmAdd,
+    init: npmInit,
+    install: npmInstall
+};

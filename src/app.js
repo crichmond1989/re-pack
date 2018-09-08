@@ -1,7 +1,9 @@
-const copy = require("./copy.js");
+const api = require("./api.js");
 const ensureDir = require("./ensureDir.js");
 const git = require("./git.js");
 const npm = require("./npm.js");
+const react = require("./react.js");
+const webpack = require("./webpack.js");
 
 module.exports = async (root) => {
     if (root) {
@@ -9,14 +11,12 @@ module.exports = async (root) => {
         process.chdir(root);
     }
 
-    await ensureDir("src");
-    await ensureDir("src/api");
-    await ensureDir("src/comps");
-
-    //copy("src/api/server.js");
-    await copy(".babelrc");
-    //copy("webpack.config.js");
-
     await git();
-    await npm();
+    await npm.init();
+
+    await api();
+    await react();
+    await webpack();
+
+    await npm.install();
 }

@@ -2,9 +2,9 @@
   "name": "@crichmond1989/re-pack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "index.js",
+    "start": "node src/app.js",
     "test": "jest"
   },
   "keywords": [],
