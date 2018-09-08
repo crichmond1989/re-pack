@@ -18,6 +18,5 @@ module.exports = async (root) => {
     //copy("webpack.config.js");
 
     await git();
-
     await npm();
 }

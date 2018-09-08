@@ -1,6 +1,8 @@
 const { spawn } = require("child-process-async");
 
-module.exports = async (command, args) => {
+module.exports = async (command, ...args) => {
+    console.log(`CMD: ${command} ${args.join(" ")}`);
+
     const proc = spawn(command, args);
 
     proc.stdout.pipe(process.stdout);

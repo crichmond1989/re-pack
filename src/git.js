@@ -9,9 +9,7 @@ const gitInit = async () => {
     if (exists)
         return;
 
-    console.log("git init");
-
-    return await spawn("git", ["init"]);
+    return await spawn("git", "init");
 }
 
 module.exports = async () => {
