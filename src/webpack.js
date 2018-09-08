@@ -1,3 +1,5 @@
+const addScript = require("npm-add-script");
+
 const copy = require("./copy.js");
 const npm = require("./npm.js");
 
@@ -16,4 +18,7 @@ module.exports = async () => {
     await npm.add("webpack", "-D");
     await npm.add("webpack-clean-obsolete-chunks", "-D");
     await npm.add("webpack-command", "-D");
+
+    addScript({ key: "build", value: "webpack", force: true });
+    addScript({ key: "ci", value: "webpack -p", force: true });
 }
