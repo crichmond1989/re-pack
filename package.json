@@ -17,6 +17,7 @@
     "temps/"
   ],
   "dependencies": {
+    "child-process-async": "^1.0.1",
     "fs-extra": "^7.0.0",
     "meow": "^5.0.0"
   }

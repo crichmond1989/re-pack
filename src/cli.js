@@ -9,4 +9,4 @@ if (cli.flags.version) {
     return;
 }
 
-app();
+app(cli.input[0]).catch(e => console.log(e));
