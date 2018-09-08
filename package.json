@@ -1,0 +1,23 @@
+{
+  "name": "@crichmond1989/re-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Chris Richmond",
+  "license": "ISC",
+  "bin": {
+    "re-pack": "./src/cli.js"
+  },
+  "files": [
+    "temps/"
+  ],
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "meow": "^5.0.0"
+  }
+}
