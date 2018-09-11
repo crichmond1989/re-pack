@@ -1,6 +1,6 @@
 {
   "name": "@crichmond1989/re-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple tool to setup time.",
   "main": "src/app.js",
   "scripts": {

@@ -14,5 +14,5 @@ const gitInit = async () => {
 
 module.exports = async () => {
     await gitInit();
-    await copy(".gitignore");
+    await copy(".gitignore", "gitignore.temp");
 }
