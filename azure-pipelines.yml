@@ -14,11 +14,11 @@ steps:
   inputs:
     targetFolder: "$(Build.ArtifactStagingDirectory)"
     contents: |
-    src/*
-    temps/*
-    LICENSE
-    package.json
-    readme.md
+      src/*
+      temps/*
+      LICENSE
+      package.json
+      readme.md
 
 - task: PublishBuildArtifacts@1
   inputs:
