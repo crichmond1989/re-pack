@@ -1,7 +1,7 @@
 {
   "name": "@crichmond1989/re-pack",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple tool to setup time.",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -9,11 +9,16 @@
   },
   "keywords": [],
   "author": "Chris Richmond",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crichmond1989/re-pack"
+  },
+  "license": "GPL-3.0",
   "bin": {
     "re-pack": "./src/cli.js"
   },
   "files": [
+    "src/",
     "temps/"
   ],
   "dependencies": {

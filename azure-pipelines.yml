@@ -14,3 +14,8 @@ steps:
 
 - script: npm install
   displayName: 'npm install'
+
+# - task: Npm@1
+# inputs:
+#   command: publish
+#   publishEndpoint:
