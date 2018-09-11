@@ -13,7 +13,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     targetFolder: "$(Build.ArtifactStagingDirectory)"
-    contents:  
+    contents: |
     src/*
     temps/*
     LICENSE
